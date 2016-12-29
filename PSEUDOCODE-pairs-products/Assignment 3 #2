@@ -1,0 +1,57 @@
+//=======//============================================================================
+// Name        : Assignment 3
+// Author      : Kendrick Kwok (912351666)
+// IDE Platform: Eclipse
+// Date        : 3/14/16
+// Description : //This psuedocode represents how to find products that is considered...
+                 //frequent, i.e products that are transactioned....
+                 //more then 5% of the total amount of transactions 
+//============================================================================
+
+
+class productPairs{
+     string products;
+     int transactions;
+}
+
+//Declare variables used in the main function 
+     int totalTransaction;
+     int calculatedFivePercent;
+     min_freq = .05;
+
+//put the class into a vector
+     vector <productPairs> productVector;
+
+//Declare an object for productPairs
+     productPairs productsBought;
+
+//Assume that you have a list of products with the number of transactions already tied to it called "productPairs"
+//Put every single product with the transactions into vector called productVector
+for(int i =0; i < productVector(); i++){
+     productsBought.products.push_back(productVector);
+     productsBought.transactions(productVector);
+}
+
+//for every product inside the productVector, take each transaction and add it 
+for(int i = 0 ; i < productVector.length(); i++){
+     totalTransaction = totalTransaction + productVector(i).transactions;
+}
+
+//find what is 5% of the totalTransactions made;
+     calculatedFivePercent = totalTransaction * min_freq;
+
+//For every index of productVector, see if it is actually 5%. If it is under 5%, delete from the vector list
+for (int i =0; i< productVector.length(); i++){
+     //If the products total transaction is less then the calculated five percent, delete from vector
+     if (productVector(i).totalTransaction < calculatedFivePercent){
+      productVector.erase(productVector.begin + i;
+      i=i-1;
+     }
+}
+
+//Parse through the vector productVector and print out all the products that is more frequent
+for (int i =0; i< productVector.length(); i++){
+ cout << productVector(i).product << " is considered more frequent!" << endl;    
+}
+
+
